@@ -42,13 +42,13 @@ Both parts use TypeScript as the language. The database uses PostgreSQL and is c
 >>> npm typeorm init
 
 
--- nodemon: Automatically restarts the server whenever the server code is changed.<br />
--- ts-node: Execute TypeScript directly on Node.js without going through TypeScript Complier <br />
--- morgan: Middleware for log management used in nodeJS<br />
--- @types/express @types/node: helps define Types for Express and NodeJS<br />
--- pg: A collection of NodeJS modules for interfacing with PostgreSQL databases.<br />
--- typeorm: an object-relational mapper library that runs on NodeJS and is written in TypeScript and JavaScript (ES5, ES6, ES7, ES8).<br />
--- reflect-metadata: package you can do runtime reflection on types. Since TypeORM mostly works with decorator (like @Entity or @Column), this package is used to parse these decorators and use it for building SQL queries.
+* -- nodemon: Automatically restarts the server whenever the server code is changed.
+* -- ts-node: Execute TypeScript directly on Node.js without going through TypeScript Complier 
+* -- morgan: Middleware for log management used in nodeJS
+* -- @types/express @types/node: helps define Types for Express and NodeJS
+* -- pg: A collection of NodeJS modules for interfacing with PostgreSQL databases.
+* -- typeorm: an object-relational mapper library that runs on NodeJS and is written in TypeScript and JavaScript (ES5, ES6, ES7, ES8).
+* -- reflect-metadata: package you can do runtime reflection on types. Since TypeORM mostly works with decorator (like @Entity or @Column), this package is used to parse these decorators and use it for building SQL queries.
 
 
 > 2. Creating an Entity
@@ -56,9 +56,9 @@ Both parts use TypeScript as the language. The database uses PostgreSQL and is c
 >>> npm install bcryptjs class-validator class-transformer --save
 >>> npm install @types/bcryptjs --save-dev
 
--- bcryptjs: allows passwords to be encrypted and stored in the database
--- class-validator: A library that uses decorators to validate properties of objects coming from requests
--- class-transformer: class-transformer allows you to transform a generic object into some instance of a class and vice versa
+* -- bcryptjs: allows passwords to be encrypted and stored in the database
+* -- class-validator: A library that uses decorators to validate properties of objects coming from requests
+* -- class-transformer: class-transformer allows you to transform a generic object into some instance of a class and vice versa
 
 
 > 3. Sign up & Sign in
@@ -109,7 +109,7 @@ Both parts use TypeScript as the language. The database uses PostgreSQL and is c
 >> Creating the Vote function and using router.pathname
 >>> Create Vote function -> Update directly using mutate
 
--- useSWR mutate: automatically refreshed without refreshing
+* -- useSWR mutate: automatically refreshed without refreshing
 
 
 > 7. Creating infinite scrolling and user pages (useSWRInfinite)
