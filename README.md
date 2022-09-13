@@ -42,12 +42,12 @@ Both parts use TypeScript as the language. The database uses PostgreSQL and is c
 >>> npm typeorm init
 
 
--- nodemon: Automatically restarts the server whenever the server code is changed.
--- ts-node: Execute TypeScript directly on Node.js without going through TypeScript Complier
--- morgan: Middleware for log management used in nodeJS
--- @types/express @types/node: helps define Types for Express and NodeJS
--- pg: A collection of NodeJS modules for interfacing with PostgreSQL databases.
--- typeorm: an object-relational mapper library that runs on NodeJS and is written in TypeScript and JavaScript (ES5, ES6, ES7, ES8).
+-- nodemon: Automatically restarts the server whenever the server code is changed.<br />
+-- ts-node: Execute TypeScript directly on Node.js without going through TypeScript Complier <br />
+-- morgan: Middleware for log management used in nodeJS<br />
+-- @types/express @types/node: helps define Types for Express and NodeJS<br />
+-- pg: A collection of NodeJS modules for interfacing with PostgreSQL databases.<br />
+-- typeorm: an object-relational mapper library that runs on NodeJS and is written in TypeScript and JavaScript (ES5, ES6, ES7, ES8).<br />
 -- reflect-metadata: package you can do runtime reflection on types. Since TypeORM mostly works with decorator (like @Entity or @Column), this package is used to parse these decorators and use it for building SQL queries.
 
 
