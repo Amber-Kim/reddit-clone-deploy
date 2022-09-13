@@ -1,4 +1,4 @@
-﻿# Reddit-Clone-App Project
+# Reddit Site Clone Project
 
 ### Link :link: http://ec2-3-15-32-248.us-east-2.compute.amazonaws.com/
 
@@ -11,8 +11,6 @@
 - NextJS
 - AWS EC2 Deploy
 
-# Reddit Site Clone Project
-
 
 When creating a reddit site, the front-end part uses React's NextJS,
 The backend part used NodeJS and ExpressJS.
@@ -20,12 +18,13 @@ Both parts use TypeScript as the language. The database uses PostgreSQL and is c
 
 
 ## Preview
+![reddit](https://user-images.githubusercontent.com/95224457/189977885-ed517c5a-ddb1-4d14-9b46-56e913442ad6.png)
 
 
 ## Development Order
 
 
-> 1. Starting the overall structure
+### 1. Starting the overall structure
 >> Implementing the frontend using NextJS & TypeScript
 >>> npx create-next-app@latest --typescript client
 >> Implementing the backend using Node.js Express Typescript
@@ -51,7 +50,7 @@ Both parts use TypeScript as the language. The database uses PostgreSQL and is c
 * -- reflect-metadata: package you can do runtime reflection on types. Since TypeORM mostly works with decorator (like @Entity or @Column), this package is used to parse these decorators and use it for building SQL queries.
 
 
-> 2. Creating an Entity
+### 2. Creating an Entity
 >> Install required modules to create Entity
 >>> npm install bcryptjs class-validator class-transformer --save
 >>> npm install @types/bcryptjs --save-dev
@@ -61,7 +60,7 @@ Both parts use TypeScript as the language. The database uses PostgreSQL and is c
 * -- class-transformer: class-transformer allows you to transform a generic object into some instance of a class and vice versa
 
 
-> 3. Sign up & Sign in
+### 3. Sign up & Sign in
 >> Apply TailwindCSS to Next.js app
 >>> npm i -D postcss-preset-env tailwindcss
 >>> npx tailwind init
@@ -74,7 +73,7 @@ Both parts use TypeScript as the language. The database uses PostgreSQL and is c
 >> context > Create auth.tsx file
 
 
-> 4. Creating Community
+### 4. Creating Community
 >> subs > Create create.tsx file
 >> routes > subs.ts = create api
 >>> npm install cookie-parser --save
@@ -85,7 +84,7 @@ Both parts use TypeScript as the language. The database uses PostgreSQL and is c
 
 
 
-> 5. Creating Posts
+### 5. Creating Posts
 >> components > Create Sidebar.tsx sidebar
 >> r > [sub] > create.tsx post Create page
 >> Create Post Create page function
@@ -97,7 +96,7 @@ Both parts use TypeScript as the language. The database uses PostgreSQL and is c
 >>> Create api
 
 
-> 6. Implementing comments and voting features
+### 6. Implementing comments and voting features
 >> Create Post Comments
 >>> Create UI -> Create submitComment function -> Create api
 >> Get Post Comments
@@ -112,10 +111,11 @@ Both parts use TypeScript as the language. The database uses PostgreSQL and is c
 * -- useSWR mutate: automatically refreshed without refreshing
 
 
-> 7. Creating infinite scrolling and user pages (useSWRInfinite)
+### 7. Creating infinite scrolling and user pages (useSWRInfinite)
 * Using useSWRInfinite and the intersection observer We will implement the infinite scroll function and create a user page.
 
-> 8. Deploy the application
+
+### 8. Deploy the application
 >> Install and run docker on EC2 -> set security group -> set key pair -> connect to instance -> install docker
 * https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-22-04
 >> Create Security Group
