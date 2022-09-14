@@ -21,7 +21,7 @@ Both parts use TypeScript as the language. The database uses PostgreSQL and is c
 ![reddit](https://user-images.githubusercontent.com/95224457/189977885-ed517c5a-ddb1-4d14-9b46-56e913442ad6.png)
 
 
-## Development Order
+## Work Flow
 
 
 ### 1. Starting the overall structure
