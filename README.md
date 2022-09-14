@@ -25,20 +25,20 @@ Both parts use TypeScript as the language. The database uses PostgreSQL and is c
 
 
 ### 1. Starting the overall structure
->> Implementing the frontend using NextJS & TypeScript
->>> npx create-next-app@latest --typescript client
->> Implementing the backend using Node.js Express Typescript
->>> npm init
->>> npm install morgan nodemon express --sav
->>> npm install typescript ts-node @types/node @types/express @types/morgan --save-dev
->> Create tsconfig.json file
->>> A file that sets options for compiling code written in TypeScript into JavaScript
->> Running Postgres using Docker
->>> Create docker-compose.yml file
->>> Create .env file: use environment variables for security
->> Database and application connection
->>> npm install pg typeorm reflect-metadata --save
->>> npm typeorm init
+> Implementing the frontend using NextJS & TypeScript
+>> npx create-next-app@latest --typescript client
+> Implementing the backend using Node.js Express Typescript
+>> npm init
+>> npm install morgan nodemon express --sav
+>> npm install typescript ts-node @types/node @types/express @types/morgan --save-dev
+> Create tsconfig.json file
+>> A file that sets options for compiling code written in TypeScript into JavaScript
+> Running Postgres using Docker
+>> Create docker-compose.yml file
+>> Create .env file: use environment variables for security
+> Database and application connection
+>> npm install pg typeorm reflect-metadata --save
+>> npm typeorm init
 
 
 * -- nodemon: Automatically restarts the server whenever the server code is changed.
@@ -51,9 +51,9 @@ Both parts use TypeScript as the language. The database uses PostgreSQL and is c
 
 
 ### 2. Creating an Entity
->> Install required modules to create Entity
->>> npm install bcryptjs class-validator class-transformer --save
->>> npm install @types/bcryptjs --save-dev
+> Install required modules to create Entity
+>> npm install bcryptjs class-validator class-transformer --save
+>> npm install @types/bcryptjs --save-dev
 
 * -- bcryptjs: allows passwords to be encrypted and stored in the database
 * -- class-validator: A library that uses decorators to validate properties of objects coming from requests
@@ -61,52 +61,52 @@ Both parts use TypeScript as the language. The database uses PostgreSQL and is c
 
 
 ### 3. Sign up & Sign in
->> Apply TailwindCSS to Next.js app
->>> npm i -D postcss-preset-env tailwindcss
->>> npx tailwind init
->>> touch postcss.config.js
->> Create the member registration page UI
->>> npm install axios --save
->>> npm install cors --save
->>> npm i --save-dev @types/cors
->> Add user information to Context
->> context > Create auth.tsx file
+> Apply TailwindCSS to Next.js app
+>> npm i -D postcss-preset-env tailwindcss
+>> npx tailwind init
+>> touch postcss.config.js
+> Create the member registration page UI
+>> npm install axios --save
+>> npm install cors --save
+>> npm i --save-dev @types/cors
+> Add user information to Context
+> context > Create auth.tsx file
 
 
 ### 4. Creating Community
->> subs > Create create.tsx file
->> routes > subs.ts = create api
->>> npm install cookie-parser --save
->>> npm i --save-dev @types/cookie-parser
->> Create and separate User and Auth middleware
->>> User Middleware == User Information
->>> Auth Middleware == Authenticate according to user information or user level (cookie is required to authenticate whether you are logged in)
+> subs > Create create.tsx file
+> routes > subs.ts = create api
+>> npm install cookie-parser --save
+>> npm i --save-dev @types/cookie-parser
+> Create and separate User and Auth middleware
+>> User Middleware == User Information
+>> Auth Middleware == Authenticate according to user information or user level (cookie is required to authenticate whether you are logged in)
 
 
 
 ### 5. Creating Posts
->> components > Create Sidebar.tsx sidebar
->> r > [sub] > create.tsx post Create page
->> Create Post Create page function
->>> submitPost function
->>> Create api
->>> Add posts data to sub data in getSub handler
->> r > [sub] > [identifier] > [slug].tsx Create post page
->>> Get Post Data
->>> Create api
+> components > Create Sidebar.tsx sidebar
+> r > [sub] > create.tsx post Create page
+> Create Post Create page function
+>> submitPost function
+>> Create api
+>> Add posts data to sub data in getSub handler
+> r > [sub] > [identifier] > [slug].tsx Create post page
+>> Get Post Data
+>> Create api
 
 
 ### 6. Implementing comments and voting features
->> Create Post Comments
->>> Create UI -> Create submitComment function -> Create api
->> Get Post Comments
->>> Get comment list -> Create api -> Create comment list list UI
->> Implementation of Vote function for posts and comments
->>> Call Click Event -> Call Vote function -> Create api -> Update directly using mutate ->
->> Listing Posts on Community Pages
->>> components > Create PostCard file -> Create PostCard UI
->> Creating the Vote function and using router.pathname
->>> Create Vote function -> Update directly using mutate
+> Create Post Comments
+>> Create UI -> Create submitComment function -> Create api
+> Get Post Comments
+>> Get comment list -> Create api -> Create comment list list UI
+> Implementation of Vote function for posts and comments
+>> Call Click Event -> Call Vote function -> Create api -> Update directly using mutate ->
+> Listing Posts on Community Pages
+>> components > Create PostCard file -> Create PostCard UI
+> Creating the Vote function and using router.pathname
+>> Create Vote function -> Update directly using mutate
 
 * -- useSWR mutate: automatically refreshed without refreshing
 
@@ -116,9 +116,9 @@ Both parts use TypeScript as the language. The database uses PostgreSQL and is c
 
 
 ### 8. Deploy the application
->> Install and run docker on EC2 -> set security group -> set key pair -> connect to instance -> install docker
+> Install and run docker on EC2 -> set security group -> set key pair -> connect to instance -> install docker
 * https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-22-04
->> Create Security Group
+> Create Security Group
 
 
 ## Getting Started with Create React App
