@@ -1,6 +1,6 @@
 # Reddit Site Clone Project
 
-### Link :link: http://ec2-3-15-32-248.us-east-2.compute.amazonaws.com/
+### Link :link: http://ec2-3-140-239-88.us-east-2.compute.amazonaws.com/
 
 ## Tech Stack
 
